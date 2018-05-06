@@ -1,7 +1,10 @@
 # RAIA (repeat aerial imagery analysis)
 
 ### Matlab code for visualization and phenology analysis of repeat aerial photography
+
 This respository is designed for analysis of my aerial imagery of Harvard Forest, available [here](http://harvardforest.fas.harvard.edu:8080/exist/apps/datasets/showData.html?id=hf294). There is functionality to link with my preprocessed version of the Harvard Forest [species map](http://harvardforest.fas.harvard.edu:8080/exist/apps/datasets/showData.html?id=hf253), which is available here in the 'metadata' directory. My published work based on this code is referenced below. Please cite the data sets or references accordingly.
+
+This code was written with Matlab R2017a and makes use of the mapping toolbox (and possibly other toolboxes).
 
 - display_species_map: interactive plot of aerial image and tree stem locations, allowing identification of species and stem tag number
 
