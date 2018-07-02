@@ -2,7 +2,7 @@
 
 ## Matlab code for visualization and phenology analysis of repeat aerial photography
 
-This respository is designed for analysis of my aerial imagery of Harvard Forest, available [here](http://harvardforest.fas.harvard.edu:8080/exist/apps/datasets/showData.html?id=hf294). There is functionality to link with my preprocessed version of the Harvard Forest [species map](http://harvardforest.fas.harvard.edu:8080/exist/apps/datasets/showData.html?id=hf253), which is available here in the 'metadata' directory. This code is oriented toward analysis of individual trees, although similar principles can be used to analyze images on a regularly spaced grid (i.e. 10 m). My published work based on this code is referenced below. Please cite the data sets or references accordingly.
+This respository is designed for analysis of aerial imagery of deciduous trees. It can be readily used with my imagery of Harvard Forest, available [here](http://harvardforest.fas.harvard.edu:8080/exist/apps/datasets/showData.html?id=hf294), although some changes to file naming conventions and local directory paths will be needed. There is functionality to link with my preprocessed version of the Harvard Forest [species map](http://harvardforest.fas.harvard.edu:8080/exist/apps/datasets/showData.html?id=hf253), which is available here in the 'metadata' directory. This code is oriented toward analysis of individual trees, although similar principles can be used to analyze images on a regularly spaced grid (i.e. 10 m). My published work based on this code is referenced below. Please cite the data sets or references accordingly if you use it.
 
 This code was written with Matlab R2017a and makes use of the mapping toolbox (and possibly other toolboxes). Example output files for the mask drawing and image processing have been created for stem tag 311519.
 
@@ -44,6 +44,8 @@ or using RCC -
 - model_name = 'smoothInterp';
 - date_method = 'spring_fall_red'; 
 - percentiles = [0.1 0.5 0.9];
+
+Note that the percentiles here refer to spring; in fall the date of maximum RCC is reported as the phenology date. These analysis functions show graphs of the curve fit and phenology dates and were designed to show 30 total trees; please adjust the subplot grid as necessary.
 
 ## References:
 This is the most pertinent reference for this library of code, reporting on phenology analysis of individual trees:
