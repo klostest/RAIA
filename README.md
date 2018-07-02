@@ -11,36 +11,39 @@ This code was written with Matlab R2017a and makes use of the mapping toolbox (a
 - species_color_guide: plot of legend with species color codes
 
 ### Draw masks on trees by stem tag numbers
-May need to change image file name conventions, and path to images in these
+May need to change image file name conventions, and path to images in these.
 - create_masks: for spring time images
 - create_masks_fall: fall
+
 Auxiliary functions
 - display_all_images
 - display_images_fall
+
 For redoing masks:
 - redo_masks_spring
 - redo_masks_fall
 
 ### Use the masks to process the images and create time series data
-Time series data of color indices; see below references
+Time series data of color indices; see below references for context.
 - create_tree_mask_time_series
 - plot_tree_mask_time_series
 
 ### Analyze time series data
 Estimate curve fit parameters and phenology dates for individual trees.
 - master_function
-The rest of the functions are auxiliary for curve fit and date calculation. These have been tested with the following configurations, to produce curve fits (i.e. running VI_curve) and get phenology dates (getPhenoDates):
+
+The rest of the functions are auxiliary for curve fit and date calculation. This workflow has been tested with the following configurations, which can be specified in master_function, to produce curve fits (i.e. running VI_curve) and get phenology dates (getPhenoDates):
 
 To estimate spring and fall dates using GCC -
-index_type = 'gcc';
-model_name = 'greenDownSigmoid';
-date_method = 'CCR';
+- index_type = 'gcc';
+- model_name = 'greenDownSigmoid';
+- date_method = 'CCR';
 
 or using RCC -
-index_type = 'rcc';
-model_name = 'smoothInterp';
-date_method = 'spring_fall_red'; 
-percentiles = [0.1 0.5 0.9];
+- index_type = 'rcc';
+- model_name = 'smoothInterp';
+- date_method = 'spring_fall_red'; 
+- percentiles = [0.1 0.5 0.9];
 
 ## References:
 - http://www.mdpi.com/1424-8220/17/12/2852
