@@ -46,8 +46,9 @@ or using RCC -
 - percentiles = [0.1 0.5 0.9];
 
 ## References:
+This is the most pertinent reference for this library of code, reporting on phenology analysis of individual trees:
 - http://www.mdpi.com/1424-8220/17/12/2852
-for phenology analysis of individual trees
-See also
+
+These references use phenology analysis of aerial imagery on a regular square grid:
 - https://www.sciencedirect.com/science/article/pii/S0168192317303350
 - https://link.springer.com/article/10.1007/s00484-018-1564-9
